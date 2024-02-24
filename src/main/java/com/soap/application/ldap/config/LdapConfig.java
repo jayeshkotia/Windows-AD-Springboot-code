@@ -29,7 +29,7 @@ public class LdapConfig {
     @Bean
     AuthenticationManager authenticationManager(BaseLdapPathContextSource contextSource) {
         LdapBindAuthenticationManagerFactory factory = new LdapBindAuthenticationManagerFactory(contextSource);
-        factory.setUserDnPatterns("CN={0},CN=Users,DC=dc,DC=trimblepoc,DC=local");
+        factory.setUserDnPatterns("CN={0},CN=Users,DC=dc,DC=trimpoc,DC=local");
         return factory.createAuthenticationManager();
     }
 
